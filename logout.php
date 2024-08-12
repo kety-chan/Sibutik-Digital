@@ -4,16 +4,11 @@
 session_start();
 $_SESSION['session_username'] = "";
 $_SESSION['session_password'] = "";
+$_SESSION['password'];
+$_SESSION['nama'];
 session_destroy();
+echo "<script>
+alert('Anda Telah Keluar Dari Sistem')
+document.location= 'index.php';
 
-$cookie_name = "cookie_username";
-$cookie_value = "";
-$time = time() - (60 * 60);
-setcookie($cookie_name, $cookie_value, $time, "/");
-
-$cookie_name = "cookie_password";
-$cookie_value = "";
-$time = time() - (60 * 60);
-setcookie($cookie_name, $cookie_value, $time, "/");
-
-header("location:index.php");
+</script>";

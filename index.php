@@ -53,7 +53,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
                                     </div>
 
-                                    <form class="user" method="POST" action="admin.php">
+                                    <form class="user" method="POST" action="cek_login.php">
                                         <div class="form-group">
                                             <input type="text" name="username" class="form-control form-control-user" id="username" aria-describedby="username" placeholder="Username...">
                                         </div>

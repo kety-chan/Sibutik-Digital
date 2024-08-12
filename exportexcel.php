@@ -8,7 +8,7 @@ header("Pragma: no-cache");
 header("Expires:0");
 ?>
 
-<table border="1">
+<table style="margin-left:auto;margin-right:auto" border="1">
     <thead>
         <tr>
             <th colspan="6">Rekapitulasi Pendaftaran Identitas Kependudukan Digital</th>

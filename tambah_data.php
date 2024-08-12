@@ -2,7 +2,7 @@
 
 <?php
 if (isset($_POST['bsimpan'])) {
-
+    $tgl = date('Y-m-d');
     // Sanitize user inputs
     $nik = htmlspecialchars($_POST['nik'], ENT_QUOTES);
     $nama = htmlspecialchars($_POST['nama'], ENT_QUOTES);
@@ -13,7 +13,7 @@ if (isset($_POST['bsimpan'])) {
 
     // Use prepared statements to avoid SQL injection
     $stmt = $koneksi->prepare("INSERT INTO t_tamu (nik, nama, nope, alamat, desa, kecamatan) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $nik, $nama, $nope, $alamat, $desa, $kecamatan);
+    $stmt->bind_param("ssssss",  $nik, $nama, $nope, $alamat, $desa, $kecamatan);
 
     // Execute the statement and check for success
     if ($stmt->execute()) {
